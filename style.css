@@ -1,379 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-		<link rel="stylesheet" href="./style.css">
-    <title>Untitled</title>
-  </head>
-  <body>
-	<div class="container">
-		<h3 class="title">Виртуальное Меню</h3>
-		
-		<h3 class="subtitle">Основные Блюда</h3>
-		
-		<div class="products-container">
-			
-			<div class="product" data-name="p-1">
-				<model-viewer src="./burger.glb" ar ar-scale="fixed" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" auto-rotate alt="A 3D model carousel">
-					<button slot="ar-button" id="ar-button">
-						View in your space
-					</button>
-					<div id="ar-prompt">
-						<img src="">
-					</div>
-					<button id="ar-failure">
-						AR is not tracking!
-					</button>
-				</model-viewer>
-				<style>
-					
-					#ar-button {
-						background-image: url(./ic_view_in_ar_new_googblue_48dp.png);
-						background-repeat: no-repeat;
-						background-size: 15px 15px;
-						background-position: 12px 50%;
-						background-color: #fff;
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						white-space: nowrap;
-						bottom: 0px;
-						padding: 0px 16px 0px 40px;
-						font-family: Roboto Regular, Helvetica Neue, sans-serif;
-						font-size: 10px;
-						color:#4285f4;
-						height: 26px;
-						line-height: 26px;
-						border-radius: 18px;
-						border: 1px solid #DADCE0;
-					}
-					#ar-button:active {
-						background-color: #E8EAED;
-					}
-					#ar-button:focus {
-						outline: none;
-					}
-					#ar-button:focus-visible {
-						outline: 1px solid #4285f4;
-					}
-					model-viewer > #ar-prompt {
-						position: absolute;
-						left: 50%;
-						bottom: 175px;
-						animation: elongate 2s infinite ease-in-out alternate;
-						display: none;
-						
-						
-					}
-					model-viewer > #ar-failure {
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						bottom: 175px;
-						display: none;
-						
-					}
-				</style>
-				<h3>Burger Set</h3>
-			</div>					
-		<div class="product" data-name="p-2">
-			<model-viewer src="./salad.glb" ar ar-scale="fixed" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" auto-rotate alt="A 3D model carousel">
-					<button slot="ar-button" id="ar-button">
-						View in your space
-					</button>
-					<div id="ar-prompt">
-						<img src="">
-					</div>
-					<button id="ar-failure">
-						AR is not tracking!
-					</button>
-				</model-viewer>
-				<style>
-					#ar-button {
-						background-image: url(./ic_view_in_ar_new_googblue_48dp.png);
-						background-repeat: no-repeat;
-						background-size: 20px 20px;
-						background-position: 12px 50%;
-						background-color: #fff;
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						white-space: nowrap;
-						bottom: 0px;
-						padding: 0px 16px 0px 40px;
-						font-family: Roboto Regular, Helvetica Neue, sans-serif;
-						font-size: 14px;
-						color:#4285f4;
-						height: 36px;
-						line-height: 36px;
-						border-radius: 18px;
-						border: 1px solid #DADCE0;
-					}
-					#ar-button:active {
-						background-color: #E8EAED;
-					}
-					#ar-button:focus {
-						outline: none;
-					}
-					#ar-button:focus-visible {
-						outline: 1px solid #4285f4;
-					}
-					model-viewer > #ar-prompt {
-						position: absolute;
-						left: 50%;
-						bottom: 175px;
-						animation: elongate 2s infinite ease-in-out alternate;
-						display: none;
-					}
-					model-viewer > #ar-failure {
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						bottom: 175px;
-						display: none;
-					}
-			</style>
-			<h3>Salad</h3>
-			</div>
-		<div class="product" data-name="p-3">
-			<model-viewer id="model" src="./hotdog.glb" ar ar-scale="fixed" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" auto-rotate alt="A 3D model carousel">
-					<button slot="ar-button" id="ar-button">
-						View in your space
-					</button>
-					<div id="ar-prompt">
-						<img src="">
-					</div>
-					<button id="ar-failure">
-						AR is not tracking!
-					</button>
-				</model-viewer>
-				<style>
-					#ar-button {
-						background-image: url(./ic_view_in_ar_new_googblue_48dp.png);
-						background-repeat: no-repeat;
-						background-size: 20px 20px;
-						background-position: 12px 50%;
-						background-color: #fff;
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						white-space: nowrap;
-						bottom: 0px;
-						padding: 0px 16px 0px 40px;
-						font-family: Roboto Regular, Helvetica Neue, sans-serif;
-						font-size: 14px;
-						color:#4285f4;
-						height: 36px;
-						line-height: 36px;
-						border-radius: 18px;
-						border: 1px solid #DADCE0;
-					}
-					#ar-button:active {
-						background-color: #E8EAED;
-					}
-					#ar-button:focus {
-						outline: none;
-					}
-					#ar-button:focus-visible {
-						outline: 1px solid #4285f4;
-					}
-					model-viewer > #ar-prompt {
-						position: absolute;
-						left: 50%;
-						bottom: 175px;
-						animation: elongate 2s infinite ease-in-out alternate;
-						display: none;
-					}
-					model-viewer > #ar-failure {
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						bottom: 175px;
-						display: none;
-					}
-			</style>
-			<h3>HotDog</h3>
-			</div>
-			<div class="product" data-name="p-4">
-			<model-viewer id="model" src="./nuggets.glb" ar ar-scale="fixed" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" auto-rotate alt="A 3D model carousel">
-					<button slot="ar-button" id="ar-button">
-						View in your space
-					</button>
-					<div id="ar-prompt">
-						<img src="">
-					</div>
-					<button id="ar-failure">
-						AR is not tracking!
-					</button>
-				</model-viewer>
-				<style>
-					#ar-button {
-						background-image: url(./ic_view_in_ar_new_googblue_48dp.png);
-						background-repeat: no-repeat;
-						background-size: 20px 20px;
-						background-position: 12px 50%;
-						background-color: #fff;
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						white-space: nowrap;
-						bottom: 0px;
-						padding: 0px 16px 0px 40px;
-						font-family: Roboto Regular, Helvetica Neue, sans-serif;
-						font-size: 14px;
-						color:#4285f4;
-						height: 36px;
-						line-height: 36px;
-						border-radius: 18px;
-						border: 1px solid #DADCE0;
-					}
-					#ar-button:active {
-						background-color: #E8EAED;
-					}
-					#ar-button:focus {
-						outline: none;
-					}
-					#ar-button:focus-visible {
-						outline: 1px solid #4285f4;
-					}
-					model-viewer > #ar-prompt {
-						position: absolute;
-						left: 50%;
-						bottom: 175px;
-						animation: elongate 2s infinite ease-in-out alternate;
-						display: none;
-					}
-					model-viewer > #ar-failure {
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						bottom: 175px;
-						display: none;
-					}
-			</style>
-			<h3>Nuggets</h3>
-			</div>
-			<div class="product" data-name="p-5">
-			<model-viewer id="model" src="./lavash.glb" ar ar-scale="fixed" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" auto-rotate alt="A 3D model carousel">
-					<button slot="ar-button" id="ar-button">
-						View in your space
-					</button>
-					<div id="ar-prompt">
-						<img src="">
-					</div>
-					<button id="ar-failure">
-						AR is not tracking!
-					</button>
-				</model-viewer>
-				<style>
-					#ar-button {
-						background-image: url(./ic_view_in_ar_new_googblue_48dp.png);
-						background-repeat: no-repeat;
-						background-size: 20px 20px;
-						background-position: 12px 50%;
-						background-color: #fff;
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						white-space: nowrap;
-						bottom: 0px;
-						padding: 0px 16px 0px 40px;
-						font-family: Roboto Regular, Helvetica Neue, sans-serif;
-						font-size: 14px;
-						color:#4285f4;
-						height: 36px;
-						line-height: 36px;
-						border-radius: 18px;
-						border: 1px solid #DADCE0;
-					}
-					#ar-button:active {
-						background-color: #E8EAED;
-					}
-					#ar-button:focus {
-						outline: none;
-					}
-					#ar-button:focus-visible {
-						outline: 1px solid #4285f4;
-					}
-					model-viewer > #ar-prompt {
-						position: absolute;
-						left: 50%;
-						bottom: 175px;
-						animation: elongate 2s infinite ease-in-out alternate;
-						display: none;
-					}
-					model-viewer > #ar-failure {
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						bottom: 175px;
-						display: none;
-					}
-			</style>
-			<h3>Lavash</h3>
-			</div>
-			<div class="product" data-name="p-6">
-			<model-viewer id="model" src="./sweetd.glb" ar ar-scale="fixed" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" auto-rotate alt="A 3D model carousel">
-					<button slot="ar-button" id="ar-button">
-						Посмотреть
-					</button>
-					<div id="ar-prompt">
-						<img src="">
-					</div>
-					<button id="ar-failure">
-						AR is not tracking!
-					</button>
-				</model-viewer>
-				<style>
-					#ar-button {
-						background-image: url(./ic_view_in_ar_new_googblue_48dp.png);
-						background-repeat: no-repeat;
-						background-size: 20px 20px;
-						background-position: 12px 50%;
-						background-color: #fff;
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						white-space: nowrap;
-						bottom: 0px;
-						padding: 0px 16px 0px 40px;
-						font-family: Roboto Regular, Helvetica Neue, sans-serif;
-						font-size: 14px;
-						color:#4285f4;
-						height: 36px;
-						line-height: 36px;
-						border-radius: 18px;
-						border: 1px solid #DADCE0;
-					}
-					#ar-button:active {
-						background-color: #E8EAED;
-					}
-					#ar-button:focus {
-						outline: none;
-					}
-					#ar-button:focus-visible {
-						outline: 1px solid #4285f4;
-					}
-					model-viewer > #ar-prompt {
-						position: absolute;
-						left: 50%;
-						bottom: 175px;
-						animation: elongate 2s infinite ease-in-out alternate;
-						display: none;
-					}
-					model-viewer > #ar-failure {
-						position: absolute;
-						left: 50%;
-						transform: translateX(-50%);
-						bottom: 175px;
-						display: none;
-					}
-			</style>
-			<h3>Donut</h3>
-			</div>
-		</div>
-	</div>	 
-  </body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+	font-size:62.5%;
+	overflow-x: hidden;
+}
+
+body{
+	background: #eee;
+}
+
+.container{
+   max-width: 1000px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container .title{
+   font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .subtitle{
+   font-size: 3rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(285px, 2fr));
+   gap:2rem;
+}
+
+.container .products-container .product{
+   text-align: center;
+   font-size: 2.5rem;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+	}
+.product h3 {
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+	.product {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.product h3 {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+}
